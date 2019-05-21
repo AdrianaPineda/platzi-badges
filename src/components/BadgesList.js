@@ -43,6 +43,7 @@ function useSearchBadges(badges) {
   return { query, setQuery, filteredBadges };
 }
 
+// Changed into a function to showcase hooks
 function BadgesList(props) {
   const badges = props.badges;
 
@@ -60,6 +61,7 @@ function BadgesList(props) {
             onChange={e => {
               setQuery(e.target.value);
             }}
+            // Controlled input ^
           />
         </div>
 

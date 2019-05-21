@@ -24,7 +24,9 @@ class BadgeNew extends React.Component {
     this.setState({
       form: {
         ...this.state.form,
-        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.value, 
+        // computed property name: dynamically allocates values in an object
+        // allows an expression to be computed as a property name of an object
       },
     });
   };
